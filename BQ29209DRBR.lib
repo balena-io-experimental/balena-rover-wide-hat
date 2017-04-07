@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# BQ29209DRBR
+#
+DEF BQ29209DRBR U 0 40 Y Y 1 L N
+F0 "U" -211 759 50 H V L CNN
+F1 "BQ29209DRBR" -146 -1008 50 H V L CNN
+F2 "SON65P315X315X100-9N" 0 0 50 H I L CNN
+F3 "0.56 USD" 0 0 50 H I L CNN "Price"
+F4 "BQ29209DRBR" 0 0 50 H I L CNN "MP"
+F5 "VSON-8 Texas Instruments" 0 0 50 H I L CNN "Package"
+F6 "Good" 0 0 50 H I L CNN "Availability"
+F7 "Texas Instruments" 0 0 50 H I L CNN "MF"
+F8 "Voltage Protection with Automatic Cell Balance For 2-Cell Li-Ion Batteries, OVP=4.30V 8-SON -40 to 85" 0 0 50 H I L CNN "Description"
+DRAW
+P 2 0 0 16 -500 600 -500 -800 N
+P 2 0 0 16 -500 -800 500 -800 N
+P 2 0 0 16 500 -800 500 600 N
+P 2 0 0 16 500 600 -500 600 N
+X VDD 7 -700 400 200 R 40 40 0 0 I 
+X VC1 2 -700 200 200 R 40 40 0 0 I 
+X VC2 1 -700 100 200 R 40 40 0 0 I 
+X VC1_CB 3 -700 -100 200 R 40 40 0 0 I 
+X ~CB_EN 6 -700 -200 200 R 40 40 0 0 I 
+X CD 4 -700 -300 200 R 40 40 0 0 P 
+X EPAD 9 -700 -500 200 R 40 40 0 0 P 
+X GND 5 -700 -600 200 R 40 40 0 0 P 
+X OUT 8 700 400 200 L 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library
