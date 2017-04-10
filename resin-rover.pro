@@ -1,4 +1,4 @@
-update=Sun 09 Apr 2017 09:53:13 PM -03
+update=Mon 10 Apr 2017 03:20:31 AM -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,5 +59,7 @@ LibName29=valves
 LibName30=DRV8830DGQ
 LibName31=BQ29209DRBR
 LibName32=TPS54332DDA
+LibName33=QRE1113GR
+LibName34=ADS1015QDGSRQ1
 [general]
 version=1

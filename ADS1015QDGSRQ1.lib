@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# ADS1015QDGSRQ1
+#
+DEF ADS1015QDGSRQ1 U 0 40 Y Y 1 L N
+F0 "U" -211 759 50 H V L CNN
+F1 "ADS1015QDGSRQ1" -178 -1054 50 H V L CNN
+F2 "SOP50P490X110-10N" 0 0 50 H I L CNN
+F3 "Automotive 12-Bit ADC with Integrated MUX, PGA, Comparator, Oscillator, and Reference 10-VSSOP -40 to 125" 0 0 50 H I L CNN "Description"
+F4 "Texas Instruments" 0 0 50 H I L CNN "MF"
+F5 "Good" 0 0 50 H I L CNN "Availability"
+F6 "None" 0 0 50 H I L CNN "Package"
+F7 "2.29 USD" 0 0 50 H I L CNN "Price"
+F8 "ADS1015QDGSRQ1" 0 0 50 H I L CNN "MP"
+DRAW
+P 2 0 0 16 -700 600 -700 -800 N
+P 2 0 0 16 -700 -800 700 -800 N
+P 2 0 0 16 700 -800 700 600 N
+P 2 0 0 16 700 600 -700 600 N
+X VDD 8 -900 400 200 R 40 40 0 0 I 
+X AIN0 4 -900 200 200 R 40 40 0 0 I 
+X AIN1 5 -900 100 200 R 40 40 0 0 I 
+X AIN2 6 -900 0 200 R 40 40 0 0 I 
+X AIN3 7 -900 -100 200 R 40 40 0 0 I 
+X ADDR 1 -900 -300 200 R 40 40 0 0 I 
+X SCL 10 -900 -400 200 R 40 40 0 0 I 
+X GND 3 -900 -600 200 R 40 40 0 0 P 
+X ALERT/RDY 2 900 400 200 L 40 40 0 0 O 
+X SDA 9 900 200 200 L 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library
