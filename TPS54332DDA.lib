@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# TPS54332DDA
+#
+DEF TPS54332DDA U 0 40 Y Y 1 L N
+F0 "U" -195 570 50 H V L CNN
+F1 "TPS54332DDA" -237 -917 50 H V L CNN
+F2 "SOIC127P600X170-9N" 0 0 50 H I L CNN
+F3 "Texas Instruments" 0 0 50 H I L CNN "MF"
+F4 "1.46 USD" 0 0 50 H I L CNN "Price"
+F5 "3.5V to 28V Input, 3.5A, 1MHz Step-Down Converter with Eco-mode 8-SO PowerPAD -40 to 150" 0 0 50 H I L CNN "Description"
+F6 "TPS54332DDA" 0 0 50 H I L CNN "MP"
+F7 "HSOP-8 Texas Instruments" 0 0 50 H I L CNN "Package"
+F8 "Good" 0 0 50 H I L CNN "Availability"
+DRAW
+P 2 0 0 16 -500 500 -500 -800 N
+P 2 0 0 16 -500 -800 500 -800 N
+P 2 0 0 16 500 -800 500 500 N
+P 2 0 0 16 500 500 -500 500 N
+X VIN 2 -700 300 200 R 40 40 0 0 I 
+X VSENSE 5 -700 100 200 R 40 40 0 0 I 
+X SS 4 -700 0 200 R 40 40 0 0 P 
+X COMP 6 -700 -100 200 R 40 40 0 0 P 
+X EN 3 -700 -300 200 R 40 40 0 0 I 
+X GND 7 -700 -500 200 R 40 40 0 0 P 
+X EP 9 -700 -600 200 R 40 40 0 0 P 
+X BOOT 1 700 300 200 L 40 40 0 0 O 
+X PH 8 700 200 200 L 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library
