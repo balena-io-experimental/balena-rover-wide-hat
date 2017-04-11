@@ -1,4 +1,4 @@
-update=Mon 10 Apr 2017 03:20:31 AM -03
+update=Tue 11 Apr 2017 03:08:52 AM -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,5 +61,15 @@ LibName31=BQ29209DRBR
 LibName32=TPS54332DDA
 LibName33=QRE1113GR
 LibName34=ADS1015QDGSRQ1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
 [general]
 version=1
