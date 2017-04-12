@@ -84,7 +84,7 @@ F 1 "CONN_02X20" H 2400 3824 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm_SMD" H -2050 -600 50  0001 C CNN
 F 3 "" H -2050 -600 50  0001 C CNN
 	1    2400 2750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L CONN_01X02 J5
@@ -114,8 +114,8 @@ U 1 1 58E2B596
 P 3700 13750
 F 0 "J2" H 3750 14000 50  0000 R CNN
 F 1 "2S LIPO" H 3850 13500 50  0000 R CNN
-F 2 "Connectors_JST:JST_XH_B03B-XH-A_03x2.50mm_Straight" H 500 12000 50  0001 C CNN
-F 3 "B3B-XH-A" H 500 12000 50  0001 C CNN
+F 2 "Connectors_JST:JST_XH_S03B-XH-A_03x2.50mm_Angled" H 500 12000 50  0001 C CNN
+F 3 "S3B-XH-A" H 500 12000 50  0001 C CNN
 	1    3700 13750
 	-1   0    0    -1  
 $EndComp
@@ -647,7 +647,7 @@ F 3 "SS13FL" H 2900 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 12650 10950 0    60   ~ 0
-VSENSE
+VSENSE_6V
 $Comp
 L GND #PWR09
 U 1 1 58E9A942
@@ -664,7 +664,7 @@ V_BATT
 Text Label 16200 10900 0    60   ~ 0
 6V
 Text Label 15350 11500 0    60   ~ 0
-VSENSE
+VSENSE_6V
 Text Notes 13550 10200 0    60   ~ 12
 6V regulator
 NoConn ~ 13200 11350
@@ -808,7 +808,7 @@ F 3 "CMS06(TE12L,Q,M)" H 2900 4850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 12650 13450 0    60   ~ 0
-VSENSE
+VSENSE_5V
 $Comp
 L GND #PWR010
 U 1 1 58EB202D
@@ -825,7 +825,7 @@ V_BATT
 Text Label 16200 13400 0    60   ~ 0
 5V
 Text Label 15350 14000 0    60   ~ 0
-VSENSE
+VSENSE_5V
 NoConn ~ 13200 13850
 Text Label 16550 7350 0    60   ~ 0
 6V
@@ -1189,28 +1189,6 @@ $EndComp
 Text Label 1550 1800 0    60   ~ 0
 3.3V
 $Comp
-L CONN_01X04 J8
-U 1 1 58EDAEC2
-P 4450 2650
-F 0 "J8" H 4528 2691 50  0000 L CNN
-F 1 "CONN_01X04" H 4528 2600 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 700 350 50  0001 C CNN
-F 3 "" H 700 350 50  0001 C CNN
-	1    4450 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X04 J9
-U 1 1 58EDAFF8
-P 6200 2850
-F 0 "J9" H 6278 2891 50  0000 L CNN
-F 1 "CONN_01X04" H 6278 2800 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 2450 550 50  0001 C CNN
-F 3 "" H 2450 550 50  0001 C CNN
-	1    6200 2850
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR018
 U 1 1 58EDB40A
 P 4150 2900
@@ -1233,9 +1211,9 @@ F 3 "" H -3050 600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4000 2700 0    60   ~ 0
-3.3V
+5V
 Text Label 5750 2900 0    60   ~ 0
-3.3V
+5V
 Text GLabel 5650 2700 0    60   Input ~ 0
 SCL
 Text GLabel 5650 2800 0    60   Input ~ 0
@@ -2351,4 +2329,92 @@ NoConn ~ 2650 3000
 NoConn ~ 2650 2900
 Wire Wire Line
 	5350 12050 5350 12200
+$Comp
+L TEST_1P J8
+U 1 1 58F9284E
+P 4250 2500
+F 0 "J8" V 4204 2688 50  0000 L CNN
+F 1 "TEST_1P" V 4200 2850 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H -400 0   50  0001 C CNN
+F 3 "" H -400 0   50  0001 C CNN
+	1    4250 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J9
+U 1 1 58F95589
+P 4250 2600
+F 0 "J9" V 4204 2788 50  0000 L CNN
+F 1 "TEST_1P" V 4200 2950 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H -400 100 50  0001 C CNN
+F 3 "" H -400 100 50  0001 C CNN
+	1    4250 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J10
+U 1 1 58F956BC
+P 4250 2700
+F 0 "J10" V 4204 2888 50  0000 L CNN
+F 1 "TEST_1P" V 4200 3050 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H -400 200 50  0001 C CNN
+F 3 "" H -400 200 50  0001 C CNN
+	1    4250 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J11
+U 1 1 58F957F2
+P 4250 2800
+F 0 "J11" V 4204 2988 50  0000 L CNN
+F 1 "TEST_1P" V 4200 3150 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H -400 300 50  0001 C CNN
+F 3 "" H -400 300 50  0001 C CNN
+	1    4250 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J12
+U 1 1 58F9592F
+P 6000 2700
+F 0 "J12" V 5954 2888 50  0000 L CNN
+F 1 "TEST_1P" V 5950 3050 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 1350 200 50  0001 C CNN
+F 3 "" H 1350 200 50  0001 C CNN
+	1    6000 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J13
+U 1 1 58F95AC3
+P 6000 2800
+F 0 "J13" V 5954 2988 50  0000 L CNN
+F 1 "TEST_1P" V 5950 3150 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 1350 300 50  0001 C CNN
+F 3 "" H 1350 300 50  0001 C CNN
+	1    6000 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J14
+U 1 1 58F95C02
+P 6000 2900
+F 0 "J14" V 5954 3088 50  0000 L CNN
+F 1 "TEST_1P" V 5950 3250 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 1350 400 50  0001 C CNN
+F 3 "" H 1350 400 50  0001 C CNN
+	1    6000 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J15
+U 1 1 58F95D44
+P 6000 3000
+F 0 "J15" V 5954 3188 50  0000 L CNN
+F 1 "TEST_1P" V 5950 3350 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 1350 500 50  0001 C CNN
+F 3 "" H 1350 500 50  0001 C CNN
+	1    6000 3000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
