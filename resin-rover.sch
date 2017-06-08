@@ -28,22 +28,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:DRV8830DGQ
-LIBS:BQ29209DRBR
-LIBS:TPS54332DDA
-LIBS:QRE1113GR
-LIBS:ADS1015QDGSRQ1
 LIBS:resin-rover-cache
 EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "resin-rover-wide-hat"
+Date "2017-04-18"
+Rev "0.1"
+Comp "Resin.io"
+Comment1 "Author: Tomás Villaseca <tomas@resin.io>"
 Comment2 ""
 Comment3 ""
 Comment4 ""
